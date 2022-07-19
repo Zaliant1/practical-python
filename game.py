@@ -15,13 +15,11 @@ greeting()
 
 def guess():
     number = random.randint(1, 100)
-    print(number)
     guess = 0
     i = 0
     while guess != number:
         i += 1
         guess = int(input("Your guess? "))
-        print(guess)
         if guess == number:
             break
 
