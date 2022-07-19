@@ -10,9 +10,6 @@ def greeting():
     )
 
 
-greeting()
-
-
 def guess():
     number = random.randint(1, 100)
     guess = 0
@@ -23,7 +20,9 @@ def guess():
         if guess == number:
             break
 
-    print(f"finished in {i} tries")
+    print(f"{input_name}, you finished in {i} tries")
 
+
+greeting()
 
 guess()
